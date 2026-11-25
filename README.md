@@ -2,6 +2,8 @@
 
 A terminal-based network socket monitor for Linux built in Rust with `ratatui` and `crossterm`. `socktop` reads `/proc/net/{tcp,tcp6,udp,udp6}` and maps socket inodes to owning processes via `/proc/<pid>/fd`, offering both a one-shot stdout snapshot (`--once`) and an interactive terminal UI.
 
+<img width="1920" height="1163" alt="socktop-preview" src="https://github.com/user-attachments/assets/60dc049a-66aa-4819-93d4-74a50ebcef0b" />
+
 ## Features
 
 * **Protocol & State Coverage:** Monitors `tcp`, `tcp6`, `udp`, and `udp6` sockets, decoding little-endian hex addresses/ports and formatting unconnected UDP sockets as `UNCONN`.
